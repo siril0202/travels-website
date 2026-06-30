@@ -1,0 +1,6 @@
+{
+  "name": "Aurora Travels",
+  "description": "Premier luxury travel agency based in Madurai, Tamil Nadu, India, specializing in bespoke global journeys, curated luxury experiences, and ultra-premium concierge service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

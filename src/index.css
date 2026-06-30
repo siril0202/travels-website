@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Brand luxury navy scale */
+  --color-navy-50: #f0f3f8;
+  --color-navy-100: #dee6f0;
+  --color-navy-200: #c2d2e4;
+  --color-navy-300: #98b6d3;
+  --color-navy-400: #6993bd;
+  --color-navy-500: #4a75a3;
+  --color-navy-600: #375d87;
+  --color-navy-700: #2e4c6f;
+  --color-navy-800: #1b2e46;
+  --color-navy-900: #0a111a;
+  --color-navy-950: #05080e;
+  
+  /* Brand gold scale */
+  --color-gold-50: #fdfaf2;
+  --color-gold-100: #f9f1db;
+  --color-gold-200: #f1e0b5;
+  --color-gold-300: #e6c884;
+  --color-gold-400: #daaa53;
+  --color-gold-500: #cb8b2f;
+  --color-gold-600: #b47124;
+  --color-gold-700: #95541f;
+  --color-gold-800: #7b441e;
+  --color-gold-900: #66391d;
+  --color-gold-accent: #c5a85c;
+  --color-gold-light: #dfcb97;
+  --color-gold-dark: #a1833d;
+}
+
+/* Base resets & custom animations */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-navy-950);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(10, 17, 26, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-gold {
+  background: rgba(197, 168, 92, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 168, 92, 0.15);
+}
+
+/* Custom Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Gold Text Gradient */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #f1e0b5 0%, #c5a85c 50%, #a1833d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold Border Accent */
+.gold-border {
+  border-image: linear-gradient(to right, #dfcb97, #c5a85c, #a1833d) 1;
+}
+
